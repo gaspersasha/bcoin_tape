@@ -1,0 +1,67 @@
+// /*
+//  * Packages
+//  */
+
+@import 'reset-css';
+
+// /*
+//   * Configs & Variables
+// */
+
+@import 'config/mq-setup';
+@import 'global/variables';
+ 
+/*
+  * Global styles + entities
+*/
+
+@import 'global/base';
+@import 'global/checkbox';
+
+/*
+  * Pages ??
+*/
+
+@import '../pages/index.scss';
+@import '../pages/404/404.scss';
+
+/*
+  * Common
+*/
+
+@import '../components/logo/logo.scss';
+@import '../components/modal/modal.scss';
+@import '../components/spinner/spinner.scss';
+@import '../components/success/success.scss';
+ 
+/*
+  * Components
+*/
+
+@import '../components/roulette/roulette.scss';
+@import '../components/roulette/roulettebets.scss';
+@import '../components/status-bar/status-bar.scss';
+@import '../components/status-bar/timer.scss';
+@import '../components/desk/desk.scss';
+@import '../components/bonus-hour/bonus-hour.scss';
+@import '../components/ticker/ticker.scss';
+
+@import '../components/tabs/tabs.scss';
+@import '../components/tables/table-bets.scss';
+@import '../components/tables/table-dencsity.scss';
+@import '../components/tables/table-history.scss';
+@import '../components/tables/table-game.scss';
+
+@import '../components/header/header.scss';
+@import '../components/change-lang/change-lang.scss';
+@import '../components/profile/profile.scss';
+@import '../components/exchange/balance.scss';
+@import '../components/exchange/withdraw.scss';
+
+@import '../components/login/login.scss';
+@import '../components/login/sign-up.scss';
+@import '../components/login/recovery-code.scss';
+@import '../components/login/change-pass.scss';
+@import '../components/login/login-recovery.scss';
+
+@import '../components/welcome/welcome.scss';

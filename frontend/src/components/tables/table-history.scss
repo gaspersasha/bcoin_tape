@@ -1,0 +1,100 @@
+.block-history {
+  width: 98%;
+  margin: 30px auto 50px;
+
+  @include mq($from: tablet) {
+    width: 60%;
+  }
+
+  @include mq($from: desktop) {
+    width: 34%;
+  }
+
+  .gogame {
+    margin-bottom: 6px;
+    a {
+      color: white;
+    }
+  }
+
+  .wrapper {
+    border: 1px solid $color-white;
+    background-color: $color-black;
+    color: $color-white;
+  }
+
+  .resume {
+    font-weight: bold;
+    margin: 20px auto 20px;
+    text-align: center;
+  }
+
+  table {
+    margin: auto;
+    width: 100%;
+    border-spacing: 0;
+    table-layout: fixed;
+    
+    background: rgb(34,84,195);
+    background: linear-gradient(0deg, rgba(34,84,195,0.15029761904761907) 41%, rgb(214, 86, 0) 100%);
+
+    td {
+      vertical-align: middle;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .table-history {
+    td, th {
+      padding: 10px;
+      border-spacing: 0;
+      border: 2px solid rgba(154, 176, 199, 0.267);
+      font-size: 0.8em;
+      //border-radius: 5px;
+      border-color: rgba(255, 255, 255, 0.705);
+      
+    }
+    .head {
+      th {
+        background-color: rgb(121, 121, 121);
+        font-weight: bold;
+      }
+    }
+    .row {
+      .player {
+        font-weight: bold;
+      }
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2a9;
+      color: black;
+    }
+
+    .id {
+      text-align: left;
+    }
+
+    .gain, .result {
+      text-align: center;
+    }
+
+    .result {
+      font-weight: bold;
+    }
+
+    .num-color-green {
+      color: #1bff00;
+      text-shadow: 1px 1px 1px white;
+    }
+    .num-color-red {
+      color: #ff4800;
+      text-shadow: 1px 1px 1px white;
+    }
+    .num-color-black {
+      color: #1a012b;
+      text-shadow: 2px 1px 2px white;
+    }
+  }
+
+};

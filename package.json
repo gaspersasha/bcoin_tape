@@ -1,0 +1,39 @@
+{
+  "name": "b-tape",
+  "version": "1.0.0",
+  "description": "Bcoin Tape",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-modules backend/server",
+    "serverAPI": "npx kill-port 5000 && nodemon --experimental-modules --es-module-specifier-resolution=node backend/serverAPI.js",
+    "serverJobs": "npx kill-port 5666 && nodemon --experimental-modules --es-module-specifier-resolution=node backend/serverJobs.js",
+    "client": "npx kill-port 3012 && npm start --prefix frontend",
+    "dev": "concurrently \"npm run serverAPI\" \"npm run serverJobs\" \"npm run client\"",
+    "data:import": "node --experimental-modules --es-module-specifier-resolution=node backend/scripts/seeder",
+    "data:destroy": "node --experimental-modules --es-module-specifier-resolution=node backend/scripts/seeder -d",
+    "shell:test": "node --experimental-modules --es-module-specifier-resolution=node backend/scripts/seeder -d",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "inter_fucker",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "colors": "^1.4.0",
+    "crypto-random-string": "^3.3.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.15",
+    "set-interval-async": "^2.0.1",
+    "simple-encryptor": "^4.0.0",
+    "ws": "^7.4.6",
+    "ws-heartbeat": "^1.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.7"
+  }
+}

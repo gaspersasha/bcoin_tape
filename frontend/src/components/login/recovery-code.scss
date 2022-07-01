@@ -1,0 +1,58 @@
+.recovery {
+  // height: 100px;
+  width: 100%;
+  margin: auto;
+  color: $color-white;
+
+  .title {
+    text-align: center;
+    margin: 30px;
+    margin-bottom: 10px;
+    h2 {
+      font-size: 1.25em;
+      font-weight: bold;
+    }
+  }
+
+  .subtitle {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+  }
+
+  .code {
+    width: 85%;
+    padding: 20px;
+    margin: auto;    
+    border: 2px solid rgba(0, 255, 179, 0.329);
+    background-color: rgba(141, 141, 141, 0.445);
+    border-radius: 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: chartreuse;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .question {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    margin: 20px auto 30px;
+
+    div {
+      flex: 5;
+      margin: 3px;
+      button {
+        height: 30px;
+        width: 100%;
+      }
+    }
+  }
+};

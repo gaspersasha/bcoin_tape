@@ -1,0 +1,281 @@
+$block-height-d: 360px;
+$block-height-t: 30vw;
+$block-height-m: 150px;
+
+$value-height-d: $block-height-d * 0.14;
+$value-height-t: $block-height-t * 0.14;
+$value-height-m: $block-height-m * 0.14;
+
+$border-color: #727460;
+
+.roulette {
+  margin: 10px;
+  margin-right: 0px;
+  border: 1px solid $color-white;
+  background-color: $color-black;
+  color: $color-white;
+
+  .playground {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .schema {
+    //display: flex;
+  }
+
+  //mock 
+  table {
+    margin: auto;
+    height: 100%;
+    //width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+  }
+  td {
+    position: relative;
+    border-spacing: 0;
+    border: 0px solid $border-color;
+    //border-radius: 5px;
+  }
+
+  ////  zones and sections 
+
+  .num {
+    height: $value-height-m;
+    width: $value-height-m;
+    @include mq($from: tablet) {
+      height: $value-height-t;
+      width: $value-height-t;
+    }
+    @include mq($from: desktop) {
+      height: $value-height-d;
+      width: $value-height-d;
+    }
+  }
+
+  .zero {
+    height: $value-height-m * 1.5;
+    @include mq($from: tablet) {
+      height: $value-height-t * 1.5;
+    }
+    @include mq($from: desktop) {
+      height: $value-height-d * 1.5;
+    }
+  }
+
+  .sel, .pau, .pre-zero, .pre-pau-z {
+    background-color: $border-color;
+  }
+
+  .values {
+    width: 100%;
+    .pau {
+      height: $block-height-m * 0.065;
+      @include mq($from: tablet) {
+        height: $block-height-t * 0.065;
+      }
+      @include mq($from: desktop) {
+        height: $block-height-d * 0.065;
+      }
+    }
+    .pre-zero {
+      height: $block-height-m * 0.03;
+      width: 0.5%;
+      @include mq($from: tablet) {
+        height: $block-height-t * 0.03;
+      }
+      @include mq($from: desktop) {
+        height: $block-height-d * 0.03;
+      }
+    }
+    .pre-pau-z {
+
+    }
+  }
+
+  .sel-row {
+    height: $block-height-m * 0.01;
+    @include mq($from: tablet) {
+      height: $block-height-t * 0.01;
+    }
+
+    @include mq($from: desktop) {
+      height: $block-height-d * 0.01;
+    }
+    .pau{
+      width: 3%;
+    }
+    .sel {
+      width: 0.5%;
+    }
+  }
+
+  .sel-col {
+    .pau{
+      height: $block-height-m * 0.065;
+      @include mq($from: tablet) {
+        height: $block-height-t * 0.065;
+      }
+      @include mq($from: desktop) {
+        height: $block-height-d * 0.065;
+      }
+    }
+    .pau-z {
+      height: 2px;
+      width: 4%;
+      @include mq($from: desktop) {
+        height: 4px;
+      }
+    }
+    .sel {
+      height: 2px;
+      @include mq($from: desktop) {
+        height: 4px;
+      }
+    }
+    .sel-z {
+      width: 0.5%;
+    }
+    .pre-zero {
+      height: $block-height-m * 0.03;
+      @include mq($from: tablet) {
+        height: $block-height-t * 0.03;
+      }
+      @include mq($from: desktop) {
+        height: $block-height-d * 0.03;
+      }
+    }
+  }
+
+  .sel-z-col {
+    .pau{
+      height: $block-height-m * 0.03;
+      @include mq($from: tablet) {
+        height: $block-height-t * 0.03;
+      }
+      @include mq($from: desktop) {
+        height: $block-height-d * 0.03;
+      }
+    }
+    .sel {
+      height: 2px;
+    }
+  }
+
+  .section-zone {
+    height: $block-height-m * 0.2;
+    @include mq($from: tablet) {
+      height: $block-height-t * 0.2;
+    }
+    @include mq($from: desktop) {
+      height: $block-height-d * 0.2;
+    }
+  }
+
+  .wing {
+    width: $value-height-m * 1.35;
+    @include mq($from: tablet) {
+      width: $value-height-t * 1.35;
+    }
+    @include mq($from: desktop) {
+      width: $value-height-d * 1.35;
+    }
+  }
+  
+  .col-2-1 {
+    max-width: 100px!important;
+  }
+
+
+
+
+
+
+
+
+
+
+  //hover borders selectors
+
+  //1st row
+  .id-1-3, .id-1-5, .id-1-7, .id-1-9, .id-1-11, .id-1-13, .id-1-15, .id-1-17, .id-1-19, .id-1-21, .id-1-23, .id-1-25, .id-1-27, .id-1-29,  .id-1-31,
+  .id-1-33, .id-1-35, .id-1-37, .id-1-39, .id-1-41, .id-1-43, .id-1-45, .id-1-47, .id-1-49, .id-1-51, .id-1-53, 
+  
+  //3d row
+  .id-5-1, .id-5-3, .id-5-5, .id-5-7, .id-5-9, .id-5-11, .id-5-13, .id-5-15, .id-5-17, .id-5-19, .id-5-21, .id-5-23, .id-5-25, .id-5-27, .id-5-29,
+  .id-5-31, .id-5-33, .id-5-35, .id-5-37, .id-5-39, .id-5-41, .id-5-43, .id-5-45, .id-5-47, .id-5-49, .id-5-51,
+  
+  //4th row
+  .id-7-1,
+
+  //5th row
+  .id-9-3, .id-9-5, .id-9-6, .id-9-7, .id-9-8, .id-9-9, .id-9-10, .id-9-11, .id-9-12, .id-9-13, .id-9-14, .id-9-15, .id-9-16, 
+
+  //6th row
+  .id-11-1,
+
+  //7d row
+  .id-13-1, .id-13-3, .id-13-5, .id-13-7, .id-13-9, .id-13-11, .id-13-13, .id-13-15, .id-13-17, .id-13-19, .id-13-21, .id-13-23, .id-13-25, .id-13-27, .id-13-29,
+  .id-13-31, .id-13-33, .id-13-35, .id-13-37, .id-13-39, .id-13-41, .id-13-43, .id-13-45, .id-13-47, .id-13-49, .id-13-51,
+  
+  //9d row
+  .id-17-1, .id-17-3, .id-17-5, .id-17-7, .id-17-9, .id-17-11, .id-17-13, .id-17-15, .id-17-17, .id-17-19, .id-17-21, .id-17-23, .id-17-25, .id-17-27, .id-17-29,
+  .id-17-31, .id-17-33, .id-17-35, .id-17-37, .id-17-39, .id-17-41, .id-17-43, .id-17-45, .id-17-47, .id-17-49, .id-17-51
+
+  {
+    span {
+      position: absolute;
+      z-index: 10;
+      display: block;
+      height: 17px;
+      width: 16px;
+      margin-left: -6px;
+      margin-top: -7px;
+      background-color: magenta;
+      opacity: 0;
+
+      &:hover {
+        background-color: lavender;
+        cursor: pointer;
+        opacity: 1;
+      }
+    }
+  }
+
+  //2d row
+  .id-3-1, .id-3-2, .id-3-3, .id-3-4, .id-3-5, .id-3-6, .id-3-7, .id-3-8, .id-3-9, .id-3-10, .id-3-11, .id-3-12,
+
+  //8d row
+  .id-15-1, .id-15-2, .id-15-3, .id-15-4, .id-15-5, .id-15-6, .id-15-7, .id-15-8, .id-15-9, .id-15-10, .id-15-11, .id-15-12 
+
+  {
+    span {
+      position: absolute;
+      z-index: 10;
+      display: block;
+      height: 17px;
+      width: 16px;
+      margin-left: -6px;
+      margin-top: -7px;
+      background-color: magenta;
+      opacity: 0;
+
+      &:hover {
+        background-color: lavender;
+        cursor: pointer;
+        opacity: 1;
+      }
+    }
+  }
+
+  .num, .zero, .col-2-1, .zone-row {
+    cursor: pointer;
+  }
+
+  .warranty {
+    text-align: center;
+  }
+};

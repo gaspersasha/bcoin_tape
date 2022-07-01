@@ -1,0 +1,116 @@
+.login {
+  // height: 100px;
+  margin: auto;
+  color: $color-white;
+
+  .title {
+    text-align: center;
+    margin: 30px;
+    margin-bottom: 30px;
+    h2 {
+      font-size: 1.25em;
+      font-weight: bold;
+    }
+  }
+
+  .form {
+    width: 50%;
+    margin: auto;
+  }
+
+  .name {
+    margin-top: 20px;
+    text-align: center;
+
+    input {
+      height: 40px;
+      width: 100%;
+      padding: 0px 4px;
+      border: 2px solid rgb(0, 0, 0);
+      border-radius: 5px;
+      font-size: 1em;
+      font-weight: bold;
+
+      &:focus {
+        border: 2px solid blueviolet;
+      }
+    }
+  }
+
+  .password {
+    margin-top: 4px;
+    text-align: center;
+
+    input {
+      height: 40px;
+      width: 100%;
+      padding: 0px 4px;
+      border: 2px solid rgb(0, 0, 0);
+      border-radius: 5px;
+      font-size: 1em;
+      font-weight: bold;
+
+      &:focus {
+        border: 2px solid blueviolet;
+      }
+    }
+  }
+
+  .stay {
+    margin-top: 4px;
+    padding-left: 4px;
+    label {
+      font-size: 0.8em;
+    }
+  }
+
+  .submit {
+    margin-top: 12px;
+    text-align: center;
+
+    input {
+      height: 40px;
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+
+  .forgot {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.8em;
+  }
+
+  hr {
+    width: 60%;
+    border-color: #3a3a3a;
+  }
+
+  .register {
+    margin: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+
+  input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(58, 58, 58, 0.4);
+    opacity: 1; /* Firefox */
+    font-size: 1em!important;
+    font-weight: 100;
+  }
+  
+  input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(58, 58, 58, 0.4);
+    font-size: 1em!important;
+    font-weight: 100;
+  }
+  
+  input::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(58, 58, 58, 0.4);
+    font-size: 1em!important;
+    font-weight: 100;
+  }
+  
+};

@@ -1,0 +1,59 @@
+@import './burger.scss';
+
+.header {
+  height: 100px;
+  background-color: $color-black;
+  color: $color-white;
+  position: relative;
+  overflow: hidden;
+
+  ul {
+    display: contents;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+
+    li {
+      float: left;
+      text-align: center;
+    }
+    
+    li .link {
+      display: block;
+      height: 100px;
+      padding: 0px 6.5vw;
+      line-height: 100px;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+    }
+    
+    li .link:hover {
+      background-color: #498f4f;
+    }
+  }
+
+  &-online {
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    color: red;
+
+    @include mq($from: mobile) {
+      color: red;
+    }
+  }
+
+  &-langs{
+    position: absolute;
+    top: 36px;
+    right: 20px;
+    color: red;
+
+    @include mq($from: mobile) {
+      color: red;
+    }
+  }
+};

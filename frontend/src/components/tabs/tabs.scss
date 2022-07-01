@@ -1,0 +1,87 @@
+.tabs {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  margin-bottom: 0px;
+  //background-color: $color-black;
+  color: $color-white;
+  text-align: center;
+
+  .tab-bets {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+
+    border: 3px solid #335972;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: $color-black;
+
+    color: rgb(192, 192, 192);
+
+    &:not(.active):hover {
+      background-color: rgb(131, 131, 146);
+      //border-color: rgb(131, 131, 146);
+    }
+
+    &.active {
+      background-color: #1C6EA4;
+      border-right: 3px solid #1C6EA4;
+      border-color: #1C6EA4;
+      color: white;
+    }
+
+    .now {
+      font-size: 0.7em;
+    }
+
+    p {
+      margin: 5px;
+    }
+  }
+
+  .tab-density {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+
+    border: 3px solid #335972;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-radius: 20px 20px 0px 0px;
+
+    color: rgb(192, 192, 192);
+    background-color: $color-black;
+
+    &:not(.active):hover {
+      background-color: rgb(131, 131, 146);
+      //border-color: rgb(131, 131, 146);
+    }
+
+    &.active {
+      background-color: #1C6EA4;
+      border-left: 3px solid #1C6EA4;
+      border-color: #1C6EA4;
+      color: white;
+    }
+
+    p {
+      margin: 5px;
+      margin-top: 12px;
+    }
+  }
+
+  .tab-prev {
+    flex: 2;
+    padding-top: 25px;
+
+    a {
+      margin: 5px;
+      color: rgb(190, 190, 190);
+      text-decoration: underline;
+    }
+
+  }
+  
+};

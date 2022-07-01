@@ -1,0 +1,32 @@
+.page-index {
+  display: flex;
+  flex-direction: row;
+  //flex-wrap: wrap;    
+  max-width: 3000px;
+  margin: auto;
+
+  @include mq($until: tablet) {
+    flex-direction: column;
+  }
+
+  .section-game {
+    flex: 5;
+
+    @include mq($from: tablet) {
+      .stick-section-game {
+        display: block;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 10px;
+      }
+    }
+  }
+
+  .section-users {
+    flex: 3;
+  }
+}
+
+b {
+  font-weight: bold;
+}

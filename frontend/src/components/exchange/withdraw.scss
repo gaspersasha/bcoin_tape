@@ -1,0 +1,125 @@
+.withdraw {
+  // height: 100px;
+  margin: auto;
+  color: $color-white;
+
+  .title {
+    text-align: center;
+    margin: 30px;
+    margin-bottom: 30px;
+    h2 {
+      font-size: 1.25em;
+      font-weight: bold;
+    }
+  }
+
+  .subtitle {
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 30px;
+    font-size: 0.85em;
+  }
+
+  .rate {
+    text-align: center;
+    margin: 20px;
+    font-size: 1em;
+  }
+
+  .error {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid red;
+    color: red;
+    font-size: 0.9em;
+  }
+
+  .success {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgb(30, 255, 0);
+    color: rgb(115, 255, 0);
+    font-size: 0.9em;
+  }
+
+  .form {
+    width: 76%;
+    margin: auto;
+  }
+
+  .amount {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 20px auto 10px;
+
+    div {
+      flex: 1;
+      margin: 3px;
+      input {
+        height: 40px;
+        width: 100%;
+        padding: 0px 4px;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+  
+        &:focus {
+          border: 2px solid blueviolet;
+        }
+      }
+    }
+  }
+
+  .wallet {
+    margin-top: 10px;
+    width: 100%;
+    
+  
+    textarea {
+      width: 100%;
+      resize: none;
+    
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      margin: auto;    
+      border: 2px solid rgba(255, 208, 0, 0.548);
+      background-color: rgba(141, 141, 141, 0.445);
+      border-radius: 10px;
+      font-size: 0.9em;
+      font-weight: bold;
+      color: rgb(255, 166, 0);
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+  }
+
+  .stay {
+    margin-top: 6px;
+    padding-left: 4px;
+    label {
+      margin: auto;
+      font-size: 0.8em;
+    }
+  }
+
+  .submit {
+    width: 50%;
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 30px;
+    text-align: center;
+
+    input {
+      height: 40px;
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+
+};

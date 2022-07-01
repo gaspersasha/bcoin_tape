@@ -1,0 +1,42 @@
+.ticker {
+  // background: linear-gradient(to right, var(--gradient-color));
+  // --gradient-color: rgba(255, 255, 255, 1), rgba(255, 255, 255, 0);
+  // --gradient-width: 200px;
+  will-change: left, top;
+
+}
+
+.ticker-container:before, .ticker-container:after {
+  position: absolute;
+  top: 0;
+  width: 16rem;
+  height: 28px;
+  content: "";
+  z-index: 1;
+}
+
+.ticker-container:before {
+  left: 0;
+  background: linear-gradient(to right, #111 0%, transparent 100%);
+}
+.ticker-container:after {
+  right: 0;
+  background: linear-gradient(to left, #111 0%, transparent 100%);
+}
+
+.ticker-container {
+  position: relative;
+  height: 18px;
+  will-change: left, top;
+}
+
+.ticker-text {
+    font-size: 0.8em;
+    color: rgb(252, 124, 124);
+   .name {
+     font-weight: bold;
+   }
+   .gain {
+    // margin-right: 10px;
+   }
+}

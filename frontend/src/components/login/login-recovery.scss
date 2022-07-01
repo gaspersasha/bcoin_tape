@@ -1,0 +1,89 @@
+.login-recovery {
+  // height: 100px;
+  margin: auto;
+  color: $color-white;
+
+  .title {
+    text-align: center;
+    margin: 30px;
+    margin-bottom: 30px;
+    h2 {
+      font-size: 1.25em;
+      font-weight: bold;
+    }
+  }
+
+  .subtitle {
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 30px;
+    font-size: 0.85em;
+  }
+
+  .form {
+    width: 70%;
+    margin: auto;
+  }
+
+  .code {
+    margin-top: 20px;
+    width: 100%;
+    
+    textarea {
+      width: 100%;
+      resize: none;
+      padding: 10px 20px;
+      margin: auto;    
+      border: 2px solid rgba(0, 255, 179, 0.329);
+      background-color: rgba(141, 141, 141, 0.445);
+      border-radius: 10px;
+      font-size: 0.9em;
+      font-weight: bold;
+      color: chartreuse;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+
+  }
+
+  .submit {
+    width: 50%;
+    margin: auto;
+    margin-top: 12px;
+    text-align: center;
+
+    input {
+      height: 40px;
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+
+  .goback {
+    margin: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+
+  input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(58, 58, 58, 0.4);
+    opacity: 1; /* Firefox */
+    font-size: 1em!important;
+    font-weight: 100;
+  }
+  
+  input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(58, 58, 58, 0.4);
+    font-size: 1em!important;
+    font-weight: 100;
+  }
+  
+  input::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(58, 58, 58, 0.4);
+    font-size: 1em!important;
+    font-weight: 100;
+  }
+  
+};

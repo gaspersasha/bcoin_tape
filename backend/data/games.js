@@ -1,0 +1,267 @@
+const getGames = ({
+  AlexId,
+  DariaId,
+  MishaId,
+  KasperId,
+}) => [
+  {
+    g_id: 10003,
+    result: 'none',
+    bets: [
+      {
+        user: AlexId,
+        field: 'corn19202223',
+        bet: 3382,
+        won: 0,
+      },
+      {
+        user: AlexId,
+        field: 'split2223',
+        bet: 100,
+        won: 0,
+      },
+      {
+        user: AlexId,
+        field: 'num1',
+        bet: 300,
+        won: 0,
+      },
+      {
+        user: AlexId,
+        field: 'num20',
+        bet: 310,
+        won: 0,
+      },
+      {
+        user: AlexId,
+        field: 'corn13141617',
+        bet: 300,
+        won: 0,
+      },
+      {
+        user: DariaId,
+        field: 'split45',
+        bet: 220,
+        won: 0,
+      },
+      {
+        user: DariaId,
+        field: 'split2223',
+        bet: 145,
+        won: 0,
+      },
+      {
+        user: DariaId,
+        field: 'num1',
+        bet: 300,
+        won: 0,
+      },
+      {
+        user: DariaId,
+        field: 'col2',
+        bet: 300,
+        won: 0,
+      },
+      {
+        user: MishaId,
+        field: 'line49',
+        bet: 390,
+        won: 0,
+      },
+      {
+        user: MishaId,
+        field: 'line16',
+        bet: 200,
+        won: 0,
+      },
+      {
+        user: KasperId,
+        field: 'col3',
+        bet: 2220,
+        won: 0,
+      },
+    ],
+  },
+  {
+    g_id: 10002,
+    result: 'num00',
+    bets: [
+      {
+        user: AlexId,
+        field: 'corn19202223',
+        bet: 300,
+        won: 0,
+      },
+      {
+        user: AlexId,
+        field: 'split2223',
+        bet: 300,
+        won: 0,
+      },
+      {
+        user: AlexId,
+        field: 'num1',
+        bet: 300,
+        won: 0,
+      },
+      {
+        user: AlexId,
+        field: 'num20',
+        bet: 300,
+        won: 0,
+      },
+      {
+        user: DariaId,
+        field: 'split45',
+        bet: 220,
+        won: 0,
+      },
+      {
+        user: DariaId,
+        field: 'split2223',
+        bet: 145,
+        won: 0,
+      },
+      {
+        user: DariaId,
+        field: 'num1',
+        bet: 300,
+        won: 0,
+      },
+      {
+        user: DariaId,
+        field: 'col2',
+        bet: 300,
+        won: 0,
+      },
+    ],
+  },
+  {
+    g_id: 10001,
+    result: 'num20',
+    bets: [
+      {
+        user: AlexId,
+        field: 'corn19202223',
+        bet: 300,
+        won: 0,
+      },
+      {
+        user: AlexId,
+        field: 'split2223',
+        bet: 300,
+        won: 0,
+      },
+      {
+        user: AlexId,
+        field: 'num1',
+        bet: 300,
+        won: 0,
+      },
+      {
+        user: AlexId,
+        field: 'num20',
+        bet: 300,
+        won: 10800,
+      },
+      {
+        user: DariaId,
+        field: 'split45',
+        bet: 220,
+        won: 0,
+      },
+      {
+        user: DariaId,
+        field: 'split2223',
+        bet: 145,
+        won: 0,
+      },
+      {
+        user: DariaId,
+        field: 'num1',
+        bet: 300,
+        won: 0,
+      },
+      {
+        user: DariaId,
+        field: 'col2',
+        bet: 300,
+        won: 900,
+      },
+      {
+        user: MishaId,
+        field: 'line49',
+        bet: 390,
+        won: 0,
+      },
+      {
+        user: MishaId,
+        field: 'line16',
+        bet: 200,
+        won: 0,
+      },
+    ],
+  },
+  {
+    g_id: 10000,
+    result: 'num1',
+    bets: [
+      {
+        user: AlexId,
+        field: 'corn19202223',
+        bet: 300,
+        won: 0,
+      },
+      {
+        user: AlexId,
+        field: 'split2223',
+        bet: 300,
+        won: 0,
+      },
+      {
+        user: AlexId,
+        field: 'num1',
+        bet: 300,
+        won: 10800,
+      },
+      {
+        user: DariaId,
+        field: 'split45',
+        bet: 220,
+        won: 0,
+      },
+      {
+        user: DariaId,
+        field: 'half1936',
+        bet: 145,
+        won: 0,
+      },
+      {
+        user: DariaId,
+        field: 'num1',
+        bet: 300,
+        won: 10800,
+      },
+      {
+        user: MishaId,
+        field: 'line49',
+        bet: 1220,
+        won: 0,
+      },
+      {
+        user: MishaId,
+        field: 'line16',
+        bet: 200,
+        won: 1800,
+      },
+      {
+        user: KasperId,
+        field: 'col3',
+        bet: 2220,
+        won: 0,
+      },
+    ],
+  },
+]
+
+export default getGames;

@@ -1,0 +1,38 @@
+$mq-responsive: true;
+$mq-breakpoints: (
+    mobile:  320px,
+    tablet:  740px,
+    desktop: 980px,
+    wide:    1300px,
+    large:   2000px,
+);
+
+@import 'sass-mq';
+
+
+@include mq($from: mobile) {
+  color: red;
+}
+
+.remove-on-mobile {
+  // Apply styling up to devices smaller than tablets (exclude tablets)
+  @include mq($until: tablet) {
+    display: none!important;
+  }
+}
+
+.add-on-mobile {
+  display: none;
+  @include mq($until: tablet) {
+    display: initial;
+  }
+}
+
+// Same thing, in landscape orientation
+@include mq($until: tablet, $and: '(orientation: landscape)') {
+  color: hotpink;
+}
+// Apply styling to tablets up to desktop (exclude desktop)
+@include mq(tablet, desktop) {
+  color: green;
+}

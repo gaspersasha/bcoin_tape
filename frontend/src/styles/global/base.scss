@@ -1,0 +1,38 @@
+/*
+ * General styles that affect the "body" of the page, the main group.
+*/
+*,
+::before,
+::after
+  {box-sizing: border-box;}
+
+*:focus {outline: none;}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: $base-font-family;
+  color: $color-black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(41, 41, 41);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.removed {
+  display: none;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+a {
+  color: blue;
+  text-decoration: none; /* no underline */
+}

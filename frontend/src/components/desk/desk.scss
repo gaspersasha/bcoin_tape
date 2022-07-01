@@ -1,0 +1,80 @@
+.desk {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  //height: 150px;
+  margin: 10px;
+  margin-right: 0px;
+  border: 1px solid $color-white;
+  background-color: $color-black;
+  color: $color-white;
+
+  &-rule {
+    height: 100%;
+    width: 100%;
+    padding: 16px 0px;
+    text-align: center;
+    background-color: mediumpurple;
+    @include mq($from: tablet) {
+      flex: 5;
+    }
+
+    p {
+      margin: 18px 6px;
+      line-height: 18px;
+    }
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: row;
+    flex: 4;
+    background-color: darkblue;
+    justify-content: center;
+
+    .lable {
+      flex: 2;
+      padding: 16px 0px;
+      background-color: sandybrown;
+      text-align: right;
+
+      .amount, .field {
+        margin: 18px 0px 18px 0px;
+        height: 18px;
+      }
+    }
+
+    .inputs {
+      flex: 4;
+      padding: 20px 0px;
+      background-color: rgb(255, 238, 7);
+
+      .amount, .field {
+        margin: 6px 20px 6px 6px;
+        height: 30px;
+      }
+
+      .submit {
+        margin: 6px 20px 6px 6px;
+        height: 38px;
+      }
+
+      input {
+        height: 100%;
+        width: 100%;
+      }
+
+      .input-error {
+        border:2px solid red;
+      }
+    }
+  }
+
+  &-notice {
+    flex: 1;
+    background-color: salmon;
+  }
+
+
+
+};

@@ -1,0 +1,22 @@
+.change-lang {
+  
+  select {
+    width: 36px;
+    height: 30px;
+    padding-left: 2px;
+    font-size: 1.85em;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;       /* Remove default arrow */
+   // background-image: url(...);   /* Add custom arrow */
+    background-color: rgb(41, 0, 80);
+
+    option {
+      width: 60px;
+    }
+   
+ }
+ 
+
+};

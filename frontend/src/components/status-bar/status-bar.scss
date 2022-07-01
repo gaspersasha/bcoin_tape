@@ -1,0 +1,36 @@
+.status-bar {
+  display: flex;
+  height: 100px;
+  margin: 10px;
+  margin-right: 0px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $color-white;
+  background-color: $color-black;
+  color: $color-white;
+
+  &-title {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  &-result {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .num-color-green {
+    color: #1bff00;
+    text-shadow: 1px 1px 1px white;
+  }
+  .num-color-red {
+    color: #ff4800;
+    text-shadow: 1px 1px 1px white;
+  }
+  .num-color-black {
+    color: #1a012b;
+    text-shadow: 2px 1px 2px white;
+  }
+};

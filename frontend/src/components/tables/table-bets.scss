@@ -1,0 +1,67 @@
+.table {
+  //width: 70%;
+  margin: 10px;
+  margin-top: 0px;
+  border: 1px solid $color-white;
+  background-color: $color-black;
+  color: $color-white;
+
+  table {
+    margin: auto;
+    width: 100%;
+    border-spacing: 0;
+    table-layout: fixed;
+
+    td, th {
+      vertical-align: middle;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .table-bets {
+    td, th {
+      padding: 2px;
+      border-spacing: 0;
+      border: 2px solid rgba(154, 176, 199, 0.267);
+      font-size: 0.8em;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      //border-radius: 5px;
+      
+    }
+    .head {
+      th {
+        background-color: rgba(95, 95, 95, 0.959);
+        font-weight: bold;
+        text-align: left;
+      }
+    }
+    .own {
+      td {
+        background-color: rgb(126, 27, 255);
+        color: white;
+        font-weight: bold;
+      }
+    }
+    .other {
+      .player {
+        font-weight: bold;
+      }
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+      color: black;
+    }
+  }
+  
+  .block {
+    padding: 15px 8px;
+    line-height: 1.25em;
+  }
+
+  .info {
+    text-align: center;
+  }
+
+};
